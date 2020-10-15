@@ -7,9 +7,9 @@ void _1z()
 	double x1, x2, x3, y1, y2, y3, xmed12, xmed23, xmed31, ymed12, ymed23, ymed31, med1, med2, med3;
 	setlocale(LC_ALL, "Russian");
 	cout << "Введите x-координаты точек через пробел" << endl;
-	scanf_s("%f %f %f", &x1, &x2, &x3);
+	scanf_s("%g %g %g", &x1, &x2, &x3);
 	cout << "Введите y-координаты точек через пробел" << endl;
-	scanf_s("%f %f %f", &y1, &y2, &y3);
+	scanf_s("%g %g %g", &y1, &y2, &y3);
 	xmed12 = (x1 + x2) / 2;
 	xmed23 = (x2 + x3) / 2;
 	xmed31 = (x3 + x1) / 2;
@@ -18,7 +18,7 @@ void _1z()
 	ymed31 = (y3 + y1) / 2;
 	med1 = sqrt(((xmed12 - x3) * (xmed12 - x3)) + ((ymed12 - y3) * (ymed12 - y3)));
 	med2 = sqrt(((xmed23 - x1) * (xmed23 - x1)) + ((ymed23 - y1) * (ymed23 - y1)));
-	med3 = sqrt(((xmed31 - x3) * (xmed31 - x3)) + ((ymed31 - y3) * (ymed31 - y3))) ;
+	med3 = sqrt(((xmed31 - x2) * (xmed31 - x2)) + ((ymed31 - y2) * (ymed31 - y2))) ;
 	cout << "Длины медиан:" << med1 << " " << med2 << " " << med3 << endl;
 }
 
