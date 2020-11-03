@@ -303,7 +303,7 @@ void main()
 		string st1 = new_word, t = "can";
 		while (st.find(t) != pos)
 		{
-			st.replace(st.find(t), t.length(), "new_word");
+			st.replace(st.find(t), t.length(), new_word);
 		}
 		for (int i=0; i<st.length();i++)
 		cout << st[i];
