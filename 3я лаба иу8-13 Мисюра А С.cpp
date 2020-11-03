@@ -1,4 +1,4 @@
-// ConsoleApplication7.cpp: îïðåäåëÿåò òî÷êó âõîäà äëÿ êîíñîëüíîãî ïðèëîæåíèÿ.
+// ConsoleApplication7.cpp: Ã®Ã¯Ã°Ã¥Ã¤Ã¥Ã«Ã¿Ã¥Ã² Ã²Ã®Ã·ÃªÃ³ Ã¢ÃµÃ®Ã¤Ã  Ã¤Ã«Ã¿ ÃªÃ®Ã­Ã±Ã®Ã«Ã¼Ã­Ã®Ã£Ã® Ã¯Ã°Ã¨Ã«Ã®Ã¦Ã¥Ã­Ã¨Ã¿.
 //
 
 #include "stdafx.h"
@@ -41,8 +41,8 @@ void _1z()
 void _2z()
 {
 	int a,b,c,d;
-	scanf_s("%d %d", &a, &b);
-	scanf_s("%d %d", &c, &d);
+	cin>>a>>b;
+	cin>>c>>d;
 	if(a==c||b==d)
 		cout<<"rook danger"<<endl;
 	else
