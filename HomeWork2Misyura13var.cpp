@@ -9,7 +9,7 @@ using namespace std;
 void SaveToFile(string _path, string _text)
 {
 	ofstream outStream;
-	outStream.open(_path, ios::out); // Флаг ios::out чистит файл
+	outStream.open(_path, ios::out);
 	if (outStream.is_open())
 	{
 		outStream << _text << endl;
