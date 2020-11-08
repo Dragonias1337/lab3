@@ -38,7 +38,7 @@ string Encrypt(string _plainText, int _key)
 	string cypherText = _plainText;
 	for (int i = 0; i < cypherText.length(); i++)
 	{
-		char gamma = -128 + rand() % 256;	//превращение [0:32767] в [-128:127] без потерь	
+		char gamma = -128 + rand() % 256;
 		cypherText[i] ^= gamma;
 		cypherText[i]++;
 	}
